@@ -1,19 +1,5 @@
 /* 전체 적용 */
 
-:root {
-    --black: #181818;
-    --fureWhite: #ffffff;
-    --white: #D7E1E1;
-    --orange: #ffab00;
-
-}
-
-/* button {
-    background:none;
-    margin: 3px;
-    align-items: center;
-} */
-
 img {
     display: block;
     max-width: 100%;
@@ -26,15 +12,15 @@ li {
     list-style:none;
 }
 
-a{
-    color:inherit;
+.commentSection {
+    color: #181818;
 }
 
 .displyNone {
     display: none;
 }
 
- * {
+Container * {
     margin: 0px;
     padding: 0px;
 }
