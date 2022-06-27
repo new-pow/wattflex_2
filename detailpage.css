@@ -1,0 +1,180 @@
+
+#wrap {
+    width:1280px;
+    margin: 0 auto;
+    min-width: 500px;
+    overflow: auto;
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #3c3c3c;
+    margin-bottom: 50px;
+}
+
+/* #wrap div {
+    border: red 1px solid;
+} */
+
+#information {
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    margin: 55px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+#infoBox1 {
+    width: 30%;
+    display: flex;
+    height: 25%;
+    margin-left: 0;
+}
+
+#infoBox2 {
+    width: 70%;
+    height: 25%;
+    margin: auto;
+    margin-left: 0;
+}
+
+#mainposter {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    margin-left: 50px;
+}
+
+#infoDetail {
+    height: 100%;
+    color: white;
+}
+
+
+#story {
+    height: 80%;
+    color: white;
+}
+
+#storyBox {
+    height: 80%;
+    margin-left: 50px;
+}
+
+
+#trailer {
+    margin: 80px;
+    border-radius: 20px;
+    border: 2px solid ivory;
+}
+
+#trailerName h3{
+    height: auto;
+    color: white;
+    margin: 0;
+    padding: 25px;
+}
+
+#trailerBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#trailerBox div {
+    width: 33%;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100%;
+}
+
+#trailerBox div iframe {
+    width: 100%;
+}
+
+
+#stillcut {
+    height: 30%;
+    margin: 80px;
+}
+
+#stillcutBox {
+    width:880px;
+	overflow:hidden;
+    margin:  auto;
+}
+
+#slide {
+    position:relative;
+	width:4400px;
+}
+
+.stillCutImg {
+    float: left;
+	width:880px;
+    height: 600px;
+}
+
+
+#prevNextButtonBox { position:relative; z-index:10;}
+#prevButton {position:absolute; top:260px; left: 0.1%; opacity:0.8; cursor:pointer;}
+#nextButton {position:absolute; top:260px; right:0.1%; opacity:0.8; cursor:pointer;}
+
+#prevButton:hover {opacity:1;}
+#nextButton:hover {opacity:1;}
+
+
+
+#comment {
+    height: 20%;
+}
+
+#commentName {
+    height: 20%;
+    color: violet;
+    margin-left: 50px;
+}
+
+#commentBox {
+    height: 80%;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: row;
+}
+
+#commentDetail {
+    width: 1000px;
+    height: 45px;
+    border-radius: 25px;
+    padding-left: 12px;
+}
+
+#movieImg {
+    text-align: center;
+}
+
+#nextImg {
+    text-align: center;
+}
+
+
+#commentBtn {
+    width: 80px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+#commentBtn img {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+
+
+
+

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="minimum-scale=10">
+        <title>WatFlix</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="signup.css">
+        <script src="jquery-3.6.0.min.js"></script>
+        <script src="index.js"></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v14.0" nonce="rIi6gLaE"></script>
+    
+    </head>
+    <body>
+        <!-- navbar 부분입니다 -->
+        <nav>
+            <div class="nav-outter">
+                <div class="nav-icon">
+                    
+                    <a href="index.html" class="icon-item" >
+                        <span class="material-symbols-outlined">
+                            token
+                        </span>
+                        <span style="font-family: PyeongChangPeace-Bold;">WattFlix</span>
+                    </a>
+                </div>
+
+                <div class="nav-menu">
+                    
+                    <a href="index.html" class="nav-item">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="link-text">Home</span>
+                    </a>
+
+                    <a href="" class="nav-item">
+                        <span class="material-symbols-outlined">sort</span>
+                        <span class="link-text">Rank</span>
+                    </a>
+                    <a href="posterbook.html" class="nav-item">
+                        <span class="material-symbols-outlined">view_cozy</span>
+                        <span class="link-text">Poster</span>
+                    </a>
+                    <a href="posterbook.html" class="nav-item">
+                        <span class="material-symbols-outlined">search</span>
+                        <span class="link-text">Search</span>
+                    </a>
+                </div>
+                <div class="nav-footer">
+                    <a href="" class="footer-item">
+                        <span class="material-symbols-outlined">group</span>
+                        <span class="link-text">Group</span>
+                    </a>
+                    <a onclick="login_dropdown()" class="footer-item">
+                        <span class="material-symbols-outlined">login</span>
+                        <span class="link-text">Login</span>
+                    </a>
+                    <div id="login-div">
+                        <form id="login-form">
+                            <div id="input-div">
+                                <input type="text" placeholder="Email" id="username">
+                                <input type="password" placeholder="Password" id="password"></div>
+                            <button id="input-btn">
+                                <span>Login</span>
+                            </button>
+                        </form>
+                    </div>
+    
+                    <a href="signup.html" class="footer-item">
+                        <span class="material-symbols-outlined">person_add</span>
+                        <span class="link-text">Sign up</span>
+                    </a>
+                    <a href="posterbook.html" class="footer-item">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="link-text">평가한 작품</span>
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+        <!-- main 안쪽에 작성하신 div 넣어주세요 -->
+        <main>
+            <div class="signup-outter">
+                <div class="signup-section">
+                    <div class="signup-banner">
+                        <span>WattFlix</span>
+                        <span>무료로 가입하세요.</span>
+                    </div>
+                    <div class="signup-link">
+                        
+                        <a href=""><img src="카카오 로그인.png"></a>
+                    </div>
+                    <form class="signup-form">
+                        <div class="signup-input">
+                            <span>E-mail</span>
+                        <input type="email">
+                        </div>
+                        <div class="signup-input">
+                            <span>이름</span>
+                            <input type="text">
+                        </div>
+                        <div class="signup-input">
+                            <span>비밀번호</span>
+                            <input type="password">
+                        </div>
+                        <div class="signup-input">
+                            <span>비밀번호 확인</span>
+                            <input type="password">
+                        </div>
+                        <div class="signup-input">
+                            <span>비밀번호 확인</span>
+                            <input type="password">
+                        </div>
+                        <button type="submit">가입하기</button>
+                    </form>
+
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
