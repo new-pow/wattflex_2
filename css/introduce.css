@@ -1,0 +1,35 @@
+
+* {
+    color: #D7E1E1;
+}
+
+main div {
+    /* border: solid 1px red; */
+    padding:10px;
+    margin:0 auto;
+}
+
+.content_box {
+    max-width: 800px;
+    margin: 0px;
+}
+.content_box div{
+    padding: 0px;
+}
+
+.spot {
+    margin: 0 auto;
+}
+
+.spot img{
+    max-height: 300px;
+    overflow: hidden;
+}
+
+.table tr {
+    margin: 5px;
+    padding: 5px;
+}
+.table th {
+    margin-right: 5px;
+}
