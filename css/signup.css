@@ -18,6 +18,8 @@
     border-style: solid;
     border-width: 1px;
     border-color: #3c3c3c;
+
+
 }
 
 .signup-section > div{
@@ -30,6 +32,9 @@
     flex-direction: column;
     align-items: center;
     color:#D7E1E1;
+
+
+
 }
 
 .signup-banner > span{
@@ -42,12 +47,16 @@
     align-items: center;
     width: inherit;
 
+
 }
 
-.signup-form{
+#signup-form{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+
 }
 
 .signup-input{
@@ -55,6 +64,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
+
 }
 
 .signup-input > span{
@@ -76,8 +88,10 @@
     outline: none;
     padding: 0 ,10px,0,10px;
     text-align: center;
+
 }
-.signup-form > button{
+
+#signup-form > button{
     margin: 15px;
     color: #D7E1E1;
     height: 30px;
@@ -87,4 +101,8 @@
     border-style: solid;
     border-width: 1px;
     border-color: #767676;
+}
+
+.signup-input input {
+    background-color: white;
 }

@@ -3,13 +3,21 @@
 * { 
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
-
-#boxoffice{
+#box{
 
     color: #D7E1E1;
     font-size: 25pt;
+    text-align: center;
+    margin-top:20px;
+}
+#boxoffice{
+
+    color: #D7E1E1;
+    font-size: 15pt;
     text-align: left;
 }
+
+
 
 #mybtn {
     padding: 8px;
@@ -52,3 +60,4 @@ main{
     justify-content: center;
     align-items: center;
 }
+

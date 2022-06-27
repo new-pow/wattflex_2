@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="../css/signup.css">
         <script src="../js/jquery-3.6.0.min.js"></script>
         <script src="../jsCustom/index.js"></script>
+        <script src="../jsCustom/signup.js"></script>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v14.0" nonce="rIi6gLaE"></script>
     
     </head>
@@ -105,23 +106,53 @@
                         
                         <a href=""><img src="../image/카카오 로그인.png"></a>
                     </div>
-                    <form class="signup-form">
+                    <form id="signup-form" name="signup-form" method="post" action="joined.html">
                         <div class="signup-input">
                             <span>E-mail</span>
-                        <input type="email">
+                        <input type="email" placeholder="example@gmail.com">
                         </div>
+                        <br>
                         <div class="signup-input">
                             <span>이름</span>
-                            <input type="text">
+                            <input type="text" name="name" id="name" placeholder="2자 이상">
                         </div>
+                        <br>
                         <div class="signup-input">
                             <span>비밀번호</span>
-                            <input type="password">
+                            <input type="password" name="password2" id="password2" placeholder="영문, 숫자 특문 중 2개 조합 10자 이상">
                         </div>
+                        <br>
                         <div class="signup-input">
                             <span>비밀번호 확인</span>
-                            <input type="password">
+                            <input type="password" name="passwordCheck" id="passwordCheck">
                         </div>
+                        <br>
+                        <div class="signup-input">
+                            <span>관심 분야</span>
+                            <br>
+                            <span>
+                                <input type="checkbox">코미디
+                                <input type="checkbox">액션
+                                <input type="checkbox">로맨스
+                                <input type="checkbox">미스터리
+                                <input type="checkbox">공포
+                                <input type="checkbox">SF
+                                <input type="checkbox">판타지
+                                <input type="checkbox">모험
+                                <input type="checkbox">전쟁
+                            </span>
+                        </div>
+                        <br>
+                        <div class="signup-input">
+                            <span>이용 약관</span>
+                            <br>
+                            <span>
+                                <label><input type="checkbox" id="check1">전체 약관에 동의합니다</label>
+                                <label><input type="checkbox" id="check2">만 14세 이상입니다</label>
+                                <label><input type="checkbox" id="check3">왓플릭스 서비스 이용 약관에 동의합니다</label>
+                            </span>
+                        </div>
+                        <br>
                         <button type="submit">가입하기</button>
                     </form>
 
