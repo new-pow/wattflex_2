@@ -26,6 +26,8 @@ $(document).ready(function() {
 			moveSlide(movedIndex); 
 		}
 	});
-	
+	var randomNumber=
+	Math.floor(Math.random()*5);
+	moveSlide(randomNumber);
 	
 });

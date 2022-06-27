@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WatFlix</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/introduce.css">
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../jsCustom/index.js"></script>
+        <script src="../jsCustom/main.js"></script>
+        <style>
+            button {
+                background:orange;
+                margin: 3px;
+                align-items: center;
+                padding: 15px;
+                min-width: 60px;
+                border: 1px #D7E1E1 solid;
+                border-radius: 30px;
+                font-size: large;
+                font-weight: 600;
+                color: #181818;
+            }
+        </style>
+    
+    </head>
+    <body>
+       <!-- navbar 부분입니다 -->
+        <nav>
+            <div class="nav-outter">
+                <div class="nav-icon">
+                    <a href="../index.html" class="icon-item" >
+                        <img id="logo" src="../image/wattflixLOGO.png">
+                        <span style="font-family: PyeongChangPeace-Bold;">WattFlix</span>
+                    </a>
+                </div>
+
+                <div class="nav-menu">
+                    <!-- home -->
+                    <a href="../index.html" class="nav-item">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="link-text">Home</span>
+                    </a>
+                    <!-- search -->
+                    <a href="#" class="nav-item">
+                        <span class="material-symbols-outlined">search</span>
+                        <span class="link-text">Search</span>
+                    </a>
+                    <!-- rank -->
+                    <a href="movierank.html" class="nav-item">
+                        <span class="material-symbols-outlined">sort</span>
+                        <span class="link-text">Rank</span>
+                    </a>
+                    <!-- poster -->
+                    <a href="posterbook.html" class="nav-item">
+                        <span class="material-symbols-outlined">view_cozy</span>
+                        <span class="link-text">Poster</span>
+                    </a>
+
+                    <!-- comment -->
+                    <a href="#" class="nav-item">
+                        <span class="material-symbols-outlined">star</span>
+                        <span class="link-text">Comments</span>
+                    </a>
+                    <!-- gruop -->
+                    <a href="#" class="nav-item">
+                        <span class="material-symbols-outlined">group</span>
+                        <span class="link-text">Group</span>
+                    </a>
+                </div>
+
+                <div class="nav-member">
+                    <a onclick="login_dropdown()" class="member-item">
+                        <span class="material-symbols-outlined">login</span>
+                        <span class="link-text">Login</span>
+                    </a>
+                    <div id="login-div">
+                        <form id="login-form">
+                            <div id="input-div">
+                                <input type="text" placeholder="Email" id="username">
+                                <input type="password" placeholder="Password" id="password"></div>
+                            <button id="input-btn">
+                                <span>Login</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <a href="signup.html" class="member-item">
+                        <span class="material-symbols-outlined">person_add</span>
+                        <span class="link-text">Sign up</span>
+                    </a>
+                </div>
+
+
+                <div class="nav-footer">
+                        <span class="footer-text">
+                            <a href="introduce.html">회사소개</a><br>
+                            <a href="#">이용약관</a><br>
+                            <a href="#">제휴제안</a><br>
+                            <a href="#">고객센터</a><br>
+                            <b>ⓒ WATTFLIX Corp.</b>
+                        </span>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- main 안쪽에 작성하신 div 넣어주세요 -->
+        <main>
+            <div class="content">
+	        	<div class="content_head">
+		        	<h1 class="page_title"><span style="font-family: PyeongChangPeace-Bold;">WattFlix</span></h1>
+		        	<p class="page_info">
+			        <h1>회원가입이 완료되었습니다!</h1>
+                </div>
+                   <button onclick="location.href='../index.html';">영화 찾아보러 가기</button>
+		    	</div>
+		</div>
+	</div>
+        </main>
+    </body>
+</html>
