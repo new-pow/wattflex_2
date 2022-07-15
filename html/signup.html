@@ -6,156 +6,130 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="viewport" content="minimum-scale=10">
         <title>WatFlix</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="../css/signup.css">
         <script src="../js/jquery-3.6.0.min.js"></script>
+        <!-- <script src="../jsCustom/common.js"></script> -->
         <script src="../jsCustom/index.js"></script>
         <script src="../jsCustom/signup.js"></script>
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v14.0" nonce="rIi6gLaE"></script>
     
     </head>
     <body>
-        <!-- navbar 부분입니다 -->
-        <nav>
-            <div class="nav-outter">
-                <div class="nav-icon">
-                    <a href="../index.html" class="icon-item" >
-                        <img id="logo" src="../image/wattflixLOGO.png">
-                        <span style="font-family: PyeongChangPeace-Bold;">WattFlix</span>
-                    </a>
-                </div>
-
-                <div class="nav-menu">
-                    <!-- home -->
-                    <a href="../index.html" class="nav-item">
-                        <span class="material-symbols-outlined">home</span>
-                        <span class="link-text">Home</span>
-                    </a>
-                    <!-- search -->
-                    <a href="#" class="nav-item">
-                        <span class="material-symbols-outlined">search</span>
-                        <span class="link-text">Search</span>
-                    </a>
-                    <!-- rank -->
-                    <a href="movierank.html" class="nav-item">
-                        <span class="material-symbols-outlined">sort</span>
-                        <span class="link-text">Rank</span>
-                    </a>
-                    <!-- poster -->
-                    <a href="posterbook.html" class="nav-item">
-                        <span class="material-symbols-outlined">view_cozy</span>
-                        <span class="link-text">Poster</span>
-                    </a>
-
-                    <!-- comment -->
-                    <a href="#" class="nav-item">
-                        <span class="material-symbols-outlined">star</span>
-                        <span class="link-text">Comments</span>
-                    </a>
-                    <!-- gruop -->
-                    <a href="#" class="nav-item">
-                        <span class="material-symbols-outlined">group</span>
-                        <span class="link-text">Group</span>
-                    </a>
-                </div>
-
-                <div class="nav-member">
-                    <a onclick="login_dropdown()" class="member-item">
-                        <span class="material-symbols-outlined">login</span>
-                        <span class="link-text">Login</span>
-                    </a>
-                    <div id="login-div">
-                        <form id="login-form">
-                            <div id="input-div">
-                                <input type="text" placeholder="Email" id="username">
-                                <input type="password" placeholder="Password" id="password"></div>
-                            <button id="input-btn">
-                                <span>Login</span>
-                            </button>
-                        </form>
-                    </div>
-
-                    <a href="signup.html" class="member-item">
-                        <span class="material-symbols-outlined">person_add</span>
-                        <span class="link-text">Sign up</span>
-                    </a>
-                </div>
-
-                <div class="nav-footer">
-                    <span class="footer-text">
-                        <a href="introduce.html">회사소개</a><br>
-                        <a href="#">이용약관</a><br>
-                        <a href="#">제휴제안</a><br>
-                        <a href="#">고객센터</a><br>
-                        <b>ⓒ WATTFLIX Corp.</b>
-                    </span>
-                </div>
-
-            </div>
-        </nav>
         <!-- main 안쪽에 작성하신 div 넣어주세요 -->
         <main>
             <div class="signup-outter">
                 <div class="signup-section">
                     <div class="signup-banner">
-                        <span>WattFlix</span>
-                        <span>무료로 가입하세요.</span>
+                        <!-- logo -->
+                        <h1 class="mainLogo_big"><a href="../index.html"><span style="font-family: PyeongChangPeace-Bold;">WattFlix</span></a></h1>
+                        <!-- logo end -->
                     </div>
+                    <br>
                     <div class="signup-link">
-                        
-                        <a href=""><img src="../image/카카오 로그인.png"></a>
+                        <a href=""><img src="../image/login_kakao.png"></a>
                     </div>
+                    <br>
                     <form id="signup-form" name="signup-form" method="post" action="joined.html">
                         <div class="signup-input">
-                            <span>E-mail</span>
-                        <input type="email" placeholder="example@gmail.com">
-                        </div>
-                        <br>
-                        <div class="signup-input">
-                            <span>이름</span>
-                            <input type="text" name="name" id="name" placeholder="2자 이상">
-                        </div>
-                        <br>
-                        <div class="signup-input">
-                            <span>비밀번호</span>
-                            <input type="password" name="password2" id="password2" placeholder="영문, 숫자 특문 중 2개 조합 10자 이상">
-                        </div>
-                        <br>
-                        <div class="signup-input">
-                            <span>비밀번호 확인</span>
-                            <input type="password" name="passwordCheck" id="passwordCheck">
-                        </div>
-                        <br>
-                        <div class="signup-input">
-                            <span>관심 분야</span>
-                            <br>
-                            <span>
-                                <input type="checkbox">코미디
-                                <input type="checkbox">액션
-                                <input type="checkbox">로맨스
-                                <input type="checkbox">미스터리
-                                <input type="checkbox">공포
-                                <input type="checkbox">SF
-                                <input type="checkbox">판타지
-                                <input type="checkbox">모험
-                                <input type="checkbox">전쟁
+                            <span class="box">
+                                <label for="userId">아이디</label><br>
+                                <input type="text" id="userId" name="userId" placeholder=""><br>
+                                <span class="guide_ui"></span>
                             </span>
                         </div>
                         <br>
                         <div class="signup-input">
-                            <span>이용 약관</span>
-                            <br>
-                            <span>
-                                <label><input type="checkbox" id="check1">전체 약관에 동의합니다</label>
-                                <label><input type="checkbox" id="check2">만 14세 이상입니다</label>
-                                <label><input type="checkbox" id="check3">왓플릭스 서비스 이용 약관에 동의합니다</label>
-                            </span>
+                            <label for="userPwd">비밀번호</label>
+                            <input type="password" name="userPwd" id="userPwd" placeholder="영문, 숫자 특문 중 2개 조합 10자 이상">
                         </div>
                         <br>
-                        <button type="submit">가입하기</button>
-                    </form>
+                        <div class="signup-input">
+                            <label for="userPwdCheck">비밀번호 확인</label>
+                            <input type="password" name="userPwdCheck" id="userPwdCheck" placeholder="">
+                        </div>
+                        <br><br>
+                        <div class="signup-input">
+                            <label for="userName">이름</label>
+                            <input type="text" name="userName" id="userName" placeholder="">
+                        </div>
+                        <br>
+                       <!-- 생년월일 Start -->
+                        <div class="signup-input bday">
+                            <label for="yy">생년월일</label><br>
+                            <div class="bday_box" id="bday_yy">
+                                <input type="text" name="yy" id="yy" placeholder="년(4자리)">
+                            </div>
+                            <div class="bday_box" id="bday_mm">
+                                <select id="mm">
+                                    <option>월</option>
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="bday_box" id="bday_dd">
+                                <input type="text" id="dd" name="dd" placeholder="일">
+                            </div>
+                        </div>
+                       <!-- 생년월일 End -->
+                       <br>
+                    <div class="signup-input">
+                        <span class="box">
+                            <label for="userEmail">본인 확인 이메일<span>(선택사항)</span></label>
+                            <input type="text" id="userEmail" name="userEmail" placeholder="example@gmail.com">
+                        </span>
+                    </div>
+                    <br>
+                    <div class="signup-input">
+                        <span class="box">
+                            <label for="userHp">휴대전화</label>
+                            <select id="hp_nationalNum" name="hp_nationalNum">
+                                <option value="82">대한민국 +82</option>
+                            </select>
+                            <input type="text" id="hp" name="hp" placeholder="전화번호 입력">
+                            <button id="userHpCheckBtn" name="userHpCheckBtn">인증번호 받기</button>
+                            <input type="text" id="userHpCheck" name="userHpCheck" placeholder="인증번호 입력하세요.">
+                        </span>
+                    </div>
 
+                        <br>
+                        <div class="signup-input">
+                            <table>
+                                <tr><th>
+                                    <label>관심 분야</label>
+                                </th></tr>
+                                <tr><td><input type="checkbox"></td><td><label for="">코미디</label></td><td><input type="checkbox"></td><td>액션</td><td><input type="checkbox"></td><td>전쟁/역사</td></tr>
+                                <tr><td><input type="checkbox"></td><td>로맨틱</td><td><input type="checkbox"></td><td>미스터리</td><td><input type="checkbox"></td><td>모험</td></tr>
+                                <tr><td><input type="checkbox"></td><td>공포</td><td><input type="checkbox"></td><td>SF/판타지</td></tr>
+                            </span>
+                        </table>
+                        </div>
+                        <br>
+                        <div class="signup-input">
+                            <table>
+                            <tr><th colspan="2"><label for="check1">이용 약관</label></th></tr>
+                            <tr><td><input type="checkbox" id="check1"></td><td><label for="check1">전체 약관에 동의합니다</label></td>
+                            </tr>
+                            <tr><td><input type="checkbox" id="check2"></td><td><label for="check2">만 14세 이상입니다</label></td>
+                            </tr>
+                            <tr><td><input type="checkbox" id="check3"></td><td><label for="check3">왓플릭스 서비스 이용 약관에 동의합니다</label></td>
+                            </tr>
+                            </div>
+                    </table>
+                        <br>
+                        <button class="greenButton" type="submit">가입하기</button>
+                    </form>
                 </div>
             </div>
         </main>

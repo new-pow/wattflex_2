@@ -1,44 +1,33 @@
-.signup-outter {
-    height: 90%;
-    width: inherit;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/* 임시 */
+
+main div {
+    border: red solid 1px;
+    padding: 0;
+    margin: 0 auto;
+    color: #D7E1E1;
 }
+
 
 .signup-section {
-    min-width: 50%;
-    min-height: 90%;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #1e1e1e;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #3c3c3c;
+    max-width: 400px;
+    /* min-height: 90%; */
+    /* border-radius: 30px; */
+    /* display: flex; */
+    /* flex-direction:column; */
+    /* justify-content:space-around; */
+    /* background-color: #1e1e1e; */
+    /* border: solid 1px #3c3c3c; */
 
-
-}
-
-.signup-section > div{
-    margin: 30px;
 }
 
 .signup-banner{
+    /* font-size: x-large; */
     width: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
     color:#D7E1E1;
-
-
-
-}
-
-.signup-banner > span{
-    font-size: 30pt;
+    padding: 10px;
 }
 
 .signup-link{
@@ -46,54 +35,46 @@
     flex-direction: column;
     align-items: center;
     width: inherit;
-
-
 }
 
 #signup-form{
     display: flex;
     flex-direction: column;
-    align-items: center;
-
-
-
+    /* align-items: center; */
 }
 
 .signup-input{
     width: inherit;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-
-
-
+    width: 90%;
 }
 
-.signup-input > span{
+.signup-input label{
     width: inherit;
-    color: #D7E1E1;
+    margin-bottom: 5px;
+    font-weight: 400;
 }
 
-.signup-input > input{
-    width: 300px;
+.signup-input input{
+    width: 95%;
     height: 30px;
     background-color: #212121;
-    color:#D7E1E1;
-    border-style: solid;
-    border-color: #D7E1E1;
-    border-radius: 15px;
-    border : 2px;
-    margin: 5px;
-    font-size: 13pt;
-    outline: none;
-    padding: 0 ,10px,0,10px;
-    text-align: center;
+    border: solid 2px #4d4d4d;
+    /* border-radius: 15px; */
+    font-size: 11pt;
+    padding: 5px;
+}
 
+.signup-input .bday {
+    /* display: flexbox; */
+}
+.signup-input .bday_box {
+    width:20%;
+    display: inline-block;
 }
 
 #signup-form > button{
     margin: 15px;
-    color: #D7E1E1;
     height: 30px;
     width: 150px;
     border-radius: 15px;
