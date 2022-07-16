@@ -1,0 +1,63 @@
+.greenButton {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 36px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: #fff;
+    background-color: #1ED760;
+    height: 48px;
+    :hover{
+        transform: scale(1.04);
+        background-color: #21e065;
+    }
+}
+
+.mainLogo_big {
+    font-size: 60px;
+    font-family: PyeongChangPeace-Bold;
+}
+
+.mainLogo {
+    font-size: 40px;
+    font-family: PyeongChangPeace-Bold;
+}
+
+main {
+    width: 100%;
+    height: inherit;
+    /* padding: 30px; */
+    overflow-y: scroll;
+}
+
+input{
+    width: 90%;
+    height: 30px;
+    /* background-color: #212121; */
+    border: solid 1px #4d4d4d;
+    border-radius: 8px;
+    font-size: 12pt;
+    font-weight: 400;
+    padding: 5px 12px;
+    :focus{
+        color: #212529;
+        background-color: #fff;
+        border-color: #1ED760;
+    }
+}
+
+.small-text {
+    color:#5c5c5c;
+    font-size: small;
+}
