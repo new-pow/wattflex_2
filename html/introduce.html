@@ -12,88 +12,112 @@
         <link rel="stylesheet" href="../css/introduce.css">
         <script src="../js/jquery-3.6.0.min.js"></script>
         <script src="../jsCustom/index.js"></script>
+        <script src="https://kit.fontawesome.com/50d21a2bed.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
     
     </head>
     <body>
-       <!-- navbar 부분입니다 -->
-       <nav>
-        <div class="nav-outter">
-            <div class="nav-icon">
-                <a href="../index.html" class="icon-item" >
-                    <span class="mainLogo">WattFlix</span>
-                </a>
-            </div>
-
-            <div class="nav-menu">
-                <!-- home -->
-                <a href="../index.html" class="nav-item">
-                    <span class="material-symbols-outlined">home</span>
-                    <span class="link-text">Home</span>
-                </a>
-                <!-- search -->
-                <a href="#" class="nav-item">
-                    <span class="material-symbols-outlined">search</span>
-                    <span class="link-text">Search</span>
-                </a>
-                <!-- rank -->
-                <a href="movierank.html" class="nav-item">
-                    <span class="material-symbols-outlined">sort</span>
-                    <span class="link-text">Rank</span>
-                </a>
-                <!-- poster -->
-                <a href="posterbook.html" class="nav-item">
-                    <span class="material-symbols-outlined">view_cozy</span>
-                    <span class="link-text">Poster</span>
-                </a>
-
-                <!-- comment -->
-                <a href="#" class="nav-item">
-                    <span class="material-symbols-outlined">star</span>
-                    <span class="link-text">Comments</span>
-                </a>
-                <!-- gruop -->
-                <a href="#" class="nav-item">
-                    <span class="material-symbols-outlined">group</span>
-                    <span class="link-text">Group</span>
-                </a>
-            </div>
-
-            <div class="nav-member">
-                <a onclick="login_dropdown()" class="member-item">
-                    <span class="material-symbols-outlined">login</span>
-                    <span class="link-text">Login</span>
-                </a>
-                <div id="login-div">
-                    <form id="login-form">
-                        <div id="input-div">
-                            <input type="text" placeholder="Email" id="username">
-                            <input type="password" placeholder="Password" id="password"></div>
-                        <button id="input-btn">
-                            <span>Login</span>
-                        </button>
-                    </form>
+        <!-- navbar 부분입니다 -->
+        <nav>
+            <div class="nav-outter">
+                <div class="nav-icon">
+                    <a href="../index.html" class="icon-item" >
+                        <span class="mainLogo">WattFlix</span>
+                    </a>
                 </div>
 
-                <a href="signup.html" class="member-item">
-                    <span class="material-symbols-outlined">person_add</span>
-                    <span class="link-text">Sign up</span>
-                </a>
+                <div class="nav-menu">
+                    <div class="nav-contents">
+                        <!-- home -->
+                        <a href="../index.html" class="nav-item">
+                            <!-- <span class="material-symbols-outlined">home</span> -->
+                            <i class="fa-solid fa-house fa-lg"></i>
+                            <span class="link-text">Home</span>
+                        </a>
+                    </div>
+                    <!-- search -->
+                    <div class="nav-contents">
+                        <a href="#" class="nav-item">
+                            <!-- <span class="material-symbols-outlined">search</span> -->
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                            <span class="link-text">Search</span>
+                        </a>
+                    </div>
+                    <!-- rank -->
+                    <div class="nav-contents">
+                        <a href="movierank.html" class="nav-item">
+                            <!-- <span class="material-symbols-outlined">sort</span> -->
+                            <i class="fa-solid fa-ranking-star fa-lg"></i>
+                            <span class="link-text">Rank</span>
+                        </a>
+                    </div>
+                    <!-- poster -->
+                    <div class="nav-contents">
+                        <a href="posterbook.html" class="nav-item">
+                            <!-- <span class="material-symbols-outlined">view_cozy</span> -->
+                            <i class="fa-solid fa-image fa-lg"></i>
+                            <span class="link-text">Poster</span>
+                        </a>
+                    </div>
+                    <!-- comment -->
+                    <div class="nav-contents">
+                        <a href="#" class="nav-item">
+                            <!-- <span class="material-symbols-outlined">star</span> -->
+                            <i class="fa-solid fa-star fa-lg"></i>
+                            <span class="link-text">Comments</span>
+                        </a>
+                    </div>
+                    <!-- gruop -->
+                    <div class="nav-contents">
+                        <a href="#" class="nav-item">
+                            <!-- <span class="material-symbols-outlined">group</span> -->
+                            <i class="fa-solid fa-comments fa-lg"></i>
+                            <span class="link-text">Group</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="nav-member">
+                    <!-- login -->
+                    <div class="nav-contents">
+                        <a onclick="login_dropdown()" class="member-item">
+                            <!-- <span class="material-symbols-outlined">login</span> -->
+                            <i class="fa-solid fa-right-to-bracket fa-lg"></i>
+                            <span class="link-text">Login</span>
+                        </a>
+                        <div id="login-div">
+                            <form id="login-form">
+                                <div id="input-div">
+                                    <input type="text" placeholder="Email" id="username">
+                                    <input type="password" placeholder="Password" id="password"></div>
+                                <button id="input-btn">
+                                    <span>Login</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="nav-contents">
+                        <a href="signup.html" class="member-item">
+                            <!-- <span class="material-symbols-outlined">person_add</span> -->
+                            <i class="fa-solid fa-user-plus fa-lg"></i>
+                            <span class="link-text">Sign up</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="nav-footer">
+                        <span class="footer-text">
+                            <a href="introduce.html">회사소개</a><br>
+                            <a href="#">이용약관</a><br>
+                            <a href="#">제휴제안</a><br>
+                            <a href="#">고객센터</a><br>
+                            <b>ⓒ WATTFLIX Corp.</b>
+                        </span>
+                </div>
+
             </div>
-
-
-            <div class="nav-footer">
-                    <span class="footer-text">
-                        <a href="introduce.html">회사소개</a><br>
-                        <a href="#">이용약관</a><br>
-                        <a href="#">제휴제안</a><br>
-                        <a href="#">고객센터</a><br>
-                        <b>ⓒ WATTFLIX Corp.</b>
-                    </span>
-            </div>
-
-        </div>
-    </nav>
+        </nav>
 
         <!-- main 안쪽에 작성하신 div 넣어주세요 -->
         <main>
@@ -147,6 +171,13 @@
                             </tbody>
                         </table>
                     </div>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="small-text">
+                        Asset list<br>
+                        <a class="small-text" href="https://www.flaticon.com/uicons">Flaticon</a>의 UIcon
+                    </span>
 		    	</div>
 		</div>
 	</div>

@@ -1,12 +1,5 @@
 /* common */
-/* font family */
-/* @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@font-face {
-    font-family: 'PyeongChangPeace-Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
+/*
 
 * {
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
@@ -39,7 +32,7 @@ a {
 /* common */
 
 nav  {
-    width :500px;
+    width :300px;
     background-color: #0F0F0F;
     height: 100%;
     position:fixed;
@@ -55,7 +48,7 @@ nav  {
 .nav-outter{
     /* border: 1px red solid; */
     display: flex;
-    width: 300px;
+    width: 240px;
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -64,7 +57,7 @@ nav  {
 }
 
 .nav-icon {
-    padding-top: 20px;
+    padding-top: 10px;
     display: block;
     display: flex;
     flex-direction: row;
@@ -91,8 +84,15 @@ nav  {
     display: flex;
     flex-direction:column;
     align-items: baseline;
-    margin-top: 30px;
+    margin-top: 10%;
     margin-left: 30px;
+}
+
+.nav-menu .nav-contents {
+    /* border: 1px solid red; */
+    margin: 5px;
+    width: 90%;
+    height: auto;
 }
 
 .nav-item {
@@ -101,12 +101,12 @@ nav  {
     align-items: center;
 }
 
-.nav-item:hover > span{
+.nav-item:hover span{
     transition-duration: 0.5s;
     color: #5c5c5c;
 }
 
-.nav-item > span{
+.nav-item span{
     margin: 8px;
 }
 
@@ -114,7 +114,7 @@ nav  {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .member-item{
@@ -123,8 +123,11 @@ nav  {
     align-items: center;
 }
 
-.member-item > span{
+.member-item span {
     margin: 10px;
+    font-size: large;
+    transition-duration: 0.5s;
+    color: #D7E1E1;
 }
 
 .member-item:hover > span {
@@ -133,12 +136,7 @@ nav  {
 }
 
 .material-symbols-outlined{
-    font-size: 25pt;
-    color: #D7E1E1;
-}
-
-.link-text {
-    color: #D7E1E1;
+    color: #;
 }
 
 .nav-footer {
@@ -153,6 +151,10 @@ nav  {
     justify-self: end;
     color:#5c5c5c;
     font-size: small;
+}
+
+.link-text {
+    font-size: large;
 }
 
 #plain-text {
@@ -198,6 +200,5 @@ nav  {
     border-width: 1px;
     background-color: #232329;
     border-color: #7a7878;
-
-} */
+}
 
