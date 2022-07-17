@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import
+	url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css')
+	;
+
+@font-face {
+	font-family: 'PyeongChangPeace-Bold';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2')
+		format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+		Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+		'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+div {
+	border-radius: 10px;
+}
+
+body {
+	background: linear-gradient(#2f2f2f, #212121);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.mypage_box {
+	border: 3px solid black;
+	background-color: white;
+	/*  */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*  */
+	width: 550px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.mypage_pofile {
+	display: inline-block;
+	text-align: center;
+	/*  */
+	padding: 30px;
+}
+
+.profile {
+	/* 	border: 1px solid black; */
+	padding: 20px;
+}
+
+.profile_box {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*  */
+	padding: 20px;
+}
+
+#profile_box_a {
+	border: 1px solid black;
+	/*  */
+	margin: 10px;
+	padding: 10px;
+}
+
+.a_item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none
+}
+
+.profile_img img {
+	width: 40%;
+}
+
+#profile_button:hover {
+	opacity: 0.8;
+}
