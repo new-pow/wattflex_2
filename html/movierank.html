@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WatFlix</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/index.css">
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="../css/movierank.css">
@@ -15,15 +16,15 @@
         <!-- <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     </head>
     <body>
+        <!-- navbar 부분입니다 -->
         <nav>
             <div class="nav-outter">
                 <div class="nav-icon">
                     <a href="../index.html" class="icon-item" >
-                        <img id="logo" src="../image/wattflixLOGO.png">
-                        <span style="font-family: PyeongChangPeace-Bold;">WattFlix</span>
+                        <span class="mainLogo">WattFlix</span>
                     </a>
                 </div>
-    
+
                 <div class="nav-menu">
                     <!-- home -->
                     <a href="../index.html" class="nav-item">
@@ -45,7 +46,7 @@
                         <span class="material-symbols-outlined">view_cozy</span>
                         <span class="link-text">Poster</span>
                     </a>
-    
+
                     <!-- comment -->
                     <a href="#" class="nav-item">
                         <span class="material-symbols-outlined">star</span>
@@ -57,7 +58,7 @@
                         <span class="link-text">Group</span>
                     </a>
                 </div>
-    
+
                 <div class="nav-member">
                     <a onclick="login_dropdown()" class="member-item">
                         <span class="material-symbols-outlined">login</span>
@@ -73,12 +74,14 @@
                             </button>
                         </form>
                     </div>
-    
+
                     <a href="signup.html" class="member-item">
                         <span class="material-symbols-outlined">person_add</span>
                         <span class="link-text">Sign up</span>
                     </a>
                 </div>
+
+
                 <div class="nav-footer">
                         <span class="footer-text">
                             <a href="introduce.html">회사소개</a><br>

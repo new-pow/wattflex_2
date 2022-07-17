@@ -1,11 +1,5 @@
 /* 전체 적용 */
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 ol,
 ul,
 li {
@@ -18,11 +12,6 @@ li {
 
 .displyNone {
     display: none;
-}
-
-Container * {
-    margin: 0px;
-    padding: 0px;
 }
 
 
@@ -50,6 +39,7 @@ Container * {
     justify-content: space-between;
     align-items: center;
     /* border: red 1px solid; */
+    margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
     padding-left:5px ;
@@ -63,7 +53,7 @@ Container * {
     min-width: 60px;
     border: 1px #D7E1E1 solid;
     color: #D7E1E1;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .toolbar .active {
@@ -75,14 +65,14 @@ Container * {
     position: relative;
 }
 
-.searchbar {
+/* .searchbar {
     min-width: 200px;
     border: none;
     border-radius: 20px;
     height: 110%;
     margin-right:10px;
     padding: 8px;
-}
+} */
 
 .searchbarContainer span {
     position: absolute;
@@ -98,6 +88,13 @@ Container * {
     margin-bottom: 3px;
     display: flex;
     flex-wrap: wrap;
+}
+
+
+.movieList img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .commentSection {
