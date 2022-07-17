@@ -55,7 +55,7 @@ $(document).ready(function(){
             $markCount = $('.marked').length;
             $('.comment').html("<h3>"+$userName+" 님,<br>더 많은 영화를<br>찾아보세요.</h3><br>보고싶어요 표시한 영화 <b>"+$markCount+"</b>개");
         });
-        });
+    });
     
 
 });

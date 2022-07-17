@@ -1,24 +1,45 @@
 /* 임시 */
 
+body {
+    height: 100%;
+}
+
 main div {
-    border: red solid 1px;
-    padding: 0;
+    /* border: red solid 1px; */
+    /* padding: 0; */
     margin: 0 auto;
     color: #D7E1E1;
 }
 
+#signup-header {
+    height: auto;
+    /* border: blue solid 1px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
 
-.signup-section {
-    max-width: 400px;
-    /* min-height: 90%; */
-    /* border-radius: 30px; */
-    /* display: flex; */
-    /* flex-direction:column; */
-    /* justify-content:space-around; */
+#signup-section {
+    /* border: yellow solid 1px; */
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
     /* background-color: #1e1e1e; */
     /* border: solid 1px #3c3c3c; */
-
+    padding: 20px;
+    position: relative;
+    height: 100%;
 }
+
+#signup-content {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 460px;
+    text-align: left;
+}
+
+/****** 로고 *******/
 
 .signup-banner{
     /* font-size: x-large; */
@@ -29,6 +50,12 @@ main div {
     color:#D7E1E1;
     padding: 10px;
 }
+
+.mainLogo {
+    font-size: 50px;
+}
+
+/****** sns login *******/
 
 .signup-link{
     display: flex;
@@ -44,36 +71,72 @@ main div {
 }
 
 .signup-input{
-    width: inherit;
     align-items: center;
-    width: 90%;
+    width: 100%;
+    height: 51px;
+    padding: 10px 14px 10px 14px;
+    box-sizing: border-box;
+    position: relative;
 }
 
-.signup-input label{
+label{
     width: inherit;
-    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding:10px 0px 3px 5px;
+}
+
+input, select {
     font-weight: 400;
+    font-size: 13px;
+    border-radius: 4px;
+    line-height: 20px;
+    padding: 5px 10px;
+    border: 1px solid #dee1e2;
+    color: #171717;
+    background: white;
+    display: block;
+    height: 100%;
+    :hover {
+        border-color: #ccc;
+    }
+    :focus{
+        border-color: #1ED760;
+        background: #fff;
+    }
 }
 
-.signup-input input{
-    width: 95%;
-    height: 30px;
-    background-color: #212121;
-    border: solid 2px #4d4d4d;
-    /* border-radius: 15px; */
-    font-size: 11pt;
-    padding: 5px;
+.bday-wrap {
+    padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 8px;
 }
 
-.signup-input .bday {
-    /* display: flexbox; */
-}
-.signup-input .bday_box {
-    width:20%;
-    display: inline-block;
+.bday-wrap #yy, #mm, #dd {
+    width: 147px;
+    display: inline;
+    border-radius: 4px;
 }
 
-#signup-form > button{
+.hp-wrap .signup-input {
+    margin-bottom: 3px;
+}
+
+.hp-wrap #userHp {
+    width: 290px;
+    margin-right: 5px;
+    display: inline;
+}
+
+.hp-wrap #userHpCheckBtn {
+    margin: 0;
+    display: inline;
+}
+
+/* #signup-form > button{
     margin: 15px;
     height: 30px;
     width: 150px;
@@ -82,8 +145,15 @@ main div {
     border-style: solid;
     border-width: 1px;
     border-color: #767676;
+} */
+
+#submitBtn {
+    margin:auto;
+    display: block;
+    margin-bottom: 40px;
 }
 
-.signup-input input {
-    background-color: white;
+table a {
+    text-decoration:underline dotted;
+    text-decoration-color: #1ED760;
 }
